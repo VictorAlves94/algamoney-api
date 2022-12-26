@@ -11,5 +11,6 @@ import com.example.victoralvesapi.repository.lancamento.LancamentoRepositoryQuer
 public interface LancamentoRepository extends JpaRepository<Lancamento, Long>, LancamentoRepositoryQuerry{
 
 	Page<Lancamento> filtrar(LancamentoFilter lancamentoFilter, Pageable pageAble);
+	
 
 }
